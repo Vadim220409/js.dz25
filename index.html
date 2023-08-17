@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="myForm">
+        <label for="note">Примітка:</label>
+        <textarea id="note" name="note" rows="4" cols="50"></textarea><br><br>
+
+        <label for="date">Вкажіть дату:</label>
+        <input type="text" id="date" name="date"><br><br>
+
+        <label for="additionalDate">Додаткова дата:</label>
+        <input type="text" id="additionalDate" name="additionalDate"><br><br>
+
+        <label for="selectOption">Виберіть опцію:</label>
+        <select id="selectOption" name="selectOption">
+            <option value="option1">Опція 1</option>
+            <option value="option2">Опція 2</option>
+            <option value="option3">Опція 3</option>
+        </select><br><br>
+
+        <button type="button" onclick="showValues()">Показати значення</button>
+    </form>
+
+    <p id="result"></p>
+    <p id="dates"></p>
+
+
+
+    <script src="./main.js"></script>
+</body>
+</html>
